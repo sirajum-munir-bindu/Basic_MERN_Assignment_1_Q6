@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #151522;
+  color: #ccc;
+}
+
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 60px auto;
+  padding-left: 40px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 35px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #2e2e3a;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 60px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.timeline-icon {
+  position: absolute;
+  left: 20px;
+  width: 30px;
+  height: 30px;
+  background-color: #888;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 16px;
+  z-index: 1;
+}
+
+.timeline-icon.primary {
+  background-color: #1d9bf0;
+}
+
+.timeline-icon.danger {
+  background-color: #e91e63;
+}
+
+.timeline-icon.success {
+  background-color: #4caf50;
+}
+
+.timeline-content {
+  margin-left: 70px;
+  background-color: #222233;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  position: relative;
+}
+
+.timeline-content::before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 20px;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #222233;
+}
+
+.badge {
+  display: inline-block;
+  font-size: 12px;
+  padding: 4px 10px;
+  font-weight: bold;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.badge.primary {
+  background-color: #1d9bf0;
+  color: white;
+}
+
+.badge.danger {
+  background-color: #e91e63;
+  color: white;
+}
+
+.badge.success {
+  background-color: #4caf50;
+  color: white;
+}
+
+.time {
+  margin-top: 15px;
+  font-size: 12px;
+  color:#888;
+}
